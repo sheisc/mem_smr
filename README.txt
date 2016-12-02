@@ -1,5 +1,8 @@
-
-		Shingled magnetic recording Translation Layer in Linux Kernel
+						MEM_SMR 
+		A Linux Kernel module for simulating Shingled Magnetic Recording, 
+		with EXT2-file-system-aware ability
+																		
+										sheisc@163.com			
 ########################## HOW TO USE ###################################
 iron@ASUS:mem_smr$ make
 
