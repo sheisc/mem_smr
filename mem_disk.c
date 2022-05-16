@@ -228,17 +228,20 @@ static void do_request(struct request_queue *q)
 
 	req = blk_fetch_request(q);
 	while (req) {
-		struct mem_disk_dev *dev = req->rq_disk->private_data;
+		struct mem_disk_dev *dev = req->rq_disk->private_data;	
+#if 0	// To make /usr/src/linux-headers-4.15.0-177-generic happy		
 		if (req->cmd_type != REQ_TYPE_FS) {
 			printk (KERN_NOTICE "Skip non-fs request\n");
 			ret = -EIO;
 			goto done;
 		}
-
+#endif
 		do_data_transfer(dev, blk_rq_pos(req), blk_rq_cur_sectors(req),
 				bio_data(req->bio), rq_data_dir(req));
 		ret = 0;
+#if 0	// To make /usr/src/linux-headers-4.15.0-177-generic happy		
 	done:
+#endif	
 		if(!__blk_end_request_cur(req, ret)){
 			req = blk_fetch_request(q);
 		}

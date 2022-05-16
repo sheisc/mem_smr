@@ -47,7 +47,8 @@ fi
 
 ##################################load mem_smr kernel module ##################################
 echo "load $module kernel module, please wait ........"
-/sbin/insmod -f ./$module.ko $* 
+#/sbin/insmod -f ./$module.ko $* 
+/sbin/insmod ./$module.ko $* 
 
 major=`cat /proc/devices | awk "\\$2==\"$device\" {print \\$1}"`
 
