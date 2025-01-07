@@ -5,6 +5,8 @@ MEM_SMR: A Linux Kernel module for simulating Shingled Magnetic Recording, with 
 |:-------------:|
 | <img src="./Overview.png" width="80%" height="80%"> |
 
+Please refer to [document.pdf](./document.pdf) for more details
+
 ## How to build 
 
 ```sh
@@ -99,4 +101,3 @@ iron@CSE:mem_smr$ dmesg
 [ 3018.536531] iron5:mem_disk_exit() 
 ```
 
-## Please refer to document.pdf for more details
