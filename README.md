@@ -3,7 +3,7 @@ MEM_SMR: A Linux Kernel module for simulating Shingled Magnetic Recording, with 
 
 | Overview |
 |:-------------:|
-| <img src="./Overview.png" width="100%" height="100%"> |
+| <img src="./Overview.png" width="80%" height="80%"> |
 
 ## How to build 
 
